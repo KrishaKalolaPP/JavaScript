@@ -2,7 +2,7 @@
     <head></head>
     <body>
         <script>
-            
+        
 // ooooooooooooooooo                                                       
 // ooooooooooooooooo
 // ooooooooooooooooo                                                       
@@ -18,16 +18,30 @@
 // ooooooooooooooooo
 // ooooooooooooooooo                                                       
 // ooooooooooooooooo   
-// for(let i=0; i<15;i++){
-//     if()
-// }
-// for(let i=0; i<3;i++){
-//     for(let j=0;j<17;j++){
-//     console.log('o')
-//     }
-//     console.log('\n')
-//     for(let k=0;k<4>)
-// }
+for (let i = 0; i < 15; i++) {
+  let spaces = 0;
+  let oCount = 0;
+  if (i >= 0 && i <= 2) {
+    oCount = 17;
+  } else if (i >= 3 && i <= 5) {
+    oCount = 4;
+  } else if (i >= 6 && i <= 8) {
+    oCount = 17;
+  } else if (i >= 9 && i <= 11) {
+    spaces = 6;
+    oCount = 4;
+  } else if (i >= 12 && i <= 14) {
+    oCount = 17;
+  }
+  for(let j=0;j<spaces;j++ ){
+    document.write("&nbsp; ");
+  }
+  for(let k=0;k<oCount;k++){
+    document.writeln("o");
+  }
+  document.writeln("<br>");
+}
+
 
         </script>
     </body>
