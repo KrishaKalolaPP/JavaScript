@@ -1,0 +1,18 @@
+<html>
+    <head>
+      
+    </head>
+    <body>
+        <script>
+            const size=prompt("enter size of an array!! ")
+            const arr=[];
+            for(let i=0;i<size;i++){
+                var value=Number(prompt("enter value at index " +i));
+                arr.push(value);
+            }
+            console.log(arr)
+            const ans=arr.reduce((a,b)=>a+b,0)
+            document.writeln("<h1> Sum of entered array is = "+ans +"</h1>")
+        </script>
+    </body>
+</html>
