@@ -1,0 +1,98 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  color: #333;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Inputs */
+input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Book List */
+.book-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.book-list li {
+  background: #ecf0f1;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  border-left: 5px solid #3498db;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Visibility Control */
+.book-list {
+  display: none;
+}
+
+.book-list.visible {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  section {
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
