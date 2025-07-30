@@ -1,0 +1,25 @@
+<body>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            const uniqueList = new Set();
+
+            function addToList(val) {
+                if (uniqueList.has(val)) {
+                    console.log("Value", val," already exists!")
+                } else {
+                    uniqueList.add(val)
+                    console.log("Added", val)
+                }
+                }
+
+            addToList(5)
+            addToList(10)
+            addToList(5)
+            console.log("Final List:", [...uniqueList])
+
+        </script>
+    </body>
+</body>
