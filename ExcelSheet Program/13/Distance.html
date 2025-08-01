@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #parent {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #333;
+      overflow: auto; /* scrollable */
+      margin-top: 100px; /* to add some distance from top */
+      padding: 10px;
+    }
+    #child {
+      width: 500px;
+      height: 400px;
+      background-color: #eee;
+      padding: 10px;
+    }
+    p {
+      margin-top: 150px;
+    }
+  </style>
+  <title>Scroll Example</title>
+</head>
+<body>
+
+<div id="parent">
+  <div id="child">
+    <p id="para">Scrollable paragraph</p>
+  </div>
+</div>
+
+<script>
+  const child = document.getElementById('child');
+  const parent = document.getElementById('parent');
+
+  const parentRect = parent.getBoundingClientRect();
+  console.log("Parent distance from top:", parentRect.top);
+
+  const para = document.getElementById('para');
+
+  parent.scrollTo({ top: para.offsetTop, behavior: 'smooth' });
+
+  setTimeout(() => {
+    parent.scrollBy({ top: 50, behavior: 'smooth' });
+  }, 2000);
+</script>
+
+</body>
+</html>

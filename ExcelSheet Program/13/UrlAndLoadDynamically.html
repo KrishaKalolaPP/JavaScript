@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dynamic Script Loading</title>
+</head>
+<body>
+
+<script>
+  console.log("Current page URL:", window.location.href);
+
+  function loadScript(url) {
+    const script = document.createElement('script');
+    script.src = url;
+    script.defer=true
+    document.head.appendChild(script);
+  }
+
+  loadScript('./extra.js');
+</script>
+
+</body>
+</html>
