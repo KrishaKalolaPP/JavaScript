@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Press Background Color</title>
+</head>
+<body>
+
+<h2>Press and Hold Key to Change Background Color</h2>
+<input type="text" id="colorInput" placeholder="Type here" onkeydown="changeToRed()" onkeyup="changeToGreen()">
+
+<script>
+function changeToRed() {
+    document.body.style.backgroundColor = 'blue';
+}
+
+function changeToGreen() {
+    document.body.style.backgroundColor = 'red';
+}
+</script>
+
+</body>
+</html>

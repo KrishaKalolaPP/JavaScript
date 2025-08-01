@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Select</title>
+</head>
+<body>
+
+<h2>Select a Programming Language</h2>
+<select id="languageSelect" onchange="selectLanguage()">
+    <option value="Java">Java</option>
+    <option value="PHP">PHP</option>
+    <option value="Angular">Angular</option>
+</select>
+
+<script>
+function selectLanguage() {
+    const selectedLanguage = document.getElementById('languageSelect').value;
+    alert(`Selected language is ${selectedLanguage}`);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppercase on Blur</title>
+</head>
+<body>
+
+<h2>Text to Uppercase on Blur</h2>
+<input type="text" id="userInput" placeholder="Type something and leave the field" onblur="toUpperCase()">
+
+<script>
+function toUpperCase() {
+    const inputField = document.getElementById('userInput');
+    inputField.value = inputField.value.toUpperCase();
+}
+</script>
+
+</body>
+</html>
