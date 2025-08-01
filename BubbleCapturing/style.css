@@ -1,0 +1,14 @@
+ .box {
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid black;
+    }
+    #grandparent {
+      background-color: #ffe0e0;
+    }
+    #parent {
+      background-color: #e0ffe0;
+    }
+    #child {
+      background-color: #e0e0ff;
+    }
