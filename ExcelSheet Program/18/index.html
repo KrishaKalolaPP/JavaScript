@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Static JSON CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Static JSON - CRUD</h1>
+
+    <section id="new-post">
+      <form>
+        <input type="text" id="title" placeholder="Enter name" required />
+        <input type="text" id="content" placeholder="Enter description" required />
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="available-posts">
+      <button>Fetch Posts</button>
+    </section>
+
+    <ul class="posts"></ul>
+
+    <template id="single-post">
+      <li data-id="0">
+        <h2>Title</h2>
+        <p>Content</p>
+        <button>Delete</button>
+      </li>
+    </template>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
