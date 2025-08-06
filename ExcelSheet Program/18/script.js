@@ -14,8 +14,6 @@ function sendHttpRequest(method, url, data) {
     setTimeout(() => {
       try {
         let response;
-
-        // Simulate error if wrong endpoint used
         if (!url.startsWith('/posts')) {
           throw new Error(" Invalid URL or route");
         }
