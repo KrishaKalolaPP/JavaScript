@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser Storage Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Browser Storage Demo</h1>
+
+  <div class="container">
+    <input id="userInput" type="text" placeholder="Enter your name" />
+
+    <button onclick="storeLocal()">Save to LocalStorage</button>
+    <button onclick="storeSession()">Save to SessionStorage</button>
+    <button onclick="storeCookie()">Save to Cookie</button>
+    <button onclick="storeIndexedDB()">Save to IndexedDB</button>
+    <button onclick="storeCache()">Save to Cache</button>
+    <button onclick="storeMemory()">Save to Memory</button>
+
+    <hr />
+    <button onclick="readAll()">🔍 Read All</button>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

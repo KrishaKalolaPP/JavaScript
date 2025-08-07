@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let notes = JSON.parse(localStorage.getItem("drawer")) || {};
   let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
-
+  console.log(notes)
+  console.log(transactions)
   function saveToStorage() {
     localStorage.setItem("drawer", JSON.stringify(notes));
     localStorage.setItem("transactions", JSON.stringify(transactions));
@@ -95,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = Math.min(Math.floor(target / note), count); i >= 0; i--) {
       if (i > 0) current[note] = i;
       else delete current[note];
-
+      console.log(current)
       const result = findChangeRecursive(
         available,
         parseFloat((target - note * i).toFixed(2)),
