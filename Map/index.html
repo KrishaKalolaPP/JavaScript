@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Place</title>
+    <style>
+      body { font-family: sans-serif; text-align: center; margin-top: 30px; }
+      button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+      input { padding: 10px; width: 200px; margin-top: 20px; font-size: 16px; }
+      #map { width: 100%; height: 400px; margin-top: 20px; }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <h1>Welcome to Simple Place</h1>
+    <button id="locateBtn">Detect My Location</button>
+    <p id="location"></p>
+    <p id="placeName"></p>
+    <input type="text" id="searchInput" placeholder="Enter location name">
+    <button id="searchBtn">Search</button>
+    <div id="map"></div>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  </body>
+</html>
