@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cash Drawer System</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Shop Cash Drawer</h1>
+    <section class="card">
+      <h2>Add Notes</h2>
+      <form id="add-note-form">
+        <input type="number" id="note-value" placeholder="Note Value (₹)" step="0.01" required />
+        <input type="number" id="note-count" placeholder="No. of Notes" required />
+        <button type="submit">➕ Add Note</button>
+      </form>
+    </section>
+ <section class="card">
+      <h2>Drawer Status</h2>
+      <div id="note-status"></div>
+    </section>
+<section class="card">
+      <h2>Customer Payment</h2>
+      <form id="customer-form">
+        <input type="number" id="bill-amount" placeholder="Bill Amount (₹)" step="0.01" required />
+        <input type="number" id="paid-amount" placeholder="Paid by Customer (₹)" step="0.01" required />
+        <button type="submit">💵 Return Change</button>
+      </form>
+      <div id="change-given" class="change-output"></div>
+    </section>
+<section class="card">
+      <div class="log-header" style="display: flex; justify-content: space-between; align-items: center;">
+        <h2>Transaction Log</h2>
+        <button id="clear-log" class="clear-btn">🗑️ Clear Log</button>
+      </div>
+      <div id="transaction-log" class="transaction-list"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
